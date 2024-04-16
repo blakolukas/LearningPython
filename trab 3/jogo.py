@@ -4,8 +4,10 @@ while True:
     op=int(input("gostaria de jogar?\n1-sim\n2-não\n"))
     if op==1:
         jogadas= 0
+        vet= [0,0,0,0,0]
         while jogadas<5:
             dado= randint(1,6)
+            vet[jogadas]= dado
             jogadas+=1
             if dado==1:
                 print('|---|\n|   |\n| o |\n|   |\n|---|\n\n')
@@ -19,6 +21,7 @@ while True:
                 print('|---|\n|o o|\n| o |\n|o o|\n|---|\n\n')
             if dado==6:
                 print('|---|\n|o o|\n|o o|\n|o o|\n|---|\n\n')
+        print(vet)
     else:
         print("jogo encerrado")
         break
