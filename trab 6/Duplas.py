@@ -1,9 +1,9 @@
 from random import randint
 
 nomes= []
-duplas=[["",""],["",""]]
+duplas=[["",""],["",""],["",""],["",""],["",""]]
 
-while len(nomes)<5:
+while len(nomes)<10:
     bota= input("\nnome:")
     nomes.append(bota)
 
