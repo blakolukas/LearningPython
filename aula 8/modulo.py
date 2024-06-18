@@ -20,4 +20,4 @@ v=[]
 for k in range (len(t)):
     v[k]= 100*sin(10*t[v])/t[v]
 graph.plot(t,v)
-graph.show
+graph.show()
